@@ -1,0 +1,82 @@
+.datatable {
+    height: 550px;
+    padding: 20px;
+
+    .datatableTitle {
+        width: 100%;
+        font-size: 24px;
+        color: gray;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .link {
+            font-size: 14px;
+            color: green;
+            border: 1px solid green;
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 550;
+
+        }
+    }
+
+    .cellwithImg {
+        display: flex;
+        align-items: center;
+
+        .cellImg {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 10px;
+        }
+    }
+
+    .cellwithStatus {
+        padding: 4px 7px;
+        border-radius: 5px;
+
+        &.active {
+            color: green;
+            background-color: rgba(0, 128, 0, 0.267);
+        }
+
+        &.pending {
+            color: goldenrod;
+            background-color: rgba(218, 165, 32, 0.541);
+        }
+
+        &.passive {
+            color: red;
+            background-color: rgba(255, 0, 0, 0.308);
+        }
+    }
+
+    .cellActon {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .viewButton {
+            padding: 3px 7px;
+            border-radius: 5px;
+            font-weight: 500;
+            color: blue;
+            background-color: rgba(0, 0, 255, 0.137);
+            cursor: pointer;
+        }
+
+        .deleteButton {
+            padding: 3px 7px;
+            border-radius: 5px;
+            font-weight: 500;
+            color: red;
+            background-color: rgba(255, 0, 0, 0.103);
+            cursor: pointer;
+        }
+    }
+}
